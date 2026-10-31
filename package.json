@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "scripts": { "dev": "vite", "build": "tsc --noEmit && vite build", "preview": "vite preview" },
+  "scripts": {"dev": "vite","prebuild": "chmod +x node_modules/.bin/tsc","build": "tsc --noEmit && vite build","preview": "vite preview"},
   "dependencies": {
     "@codemirror/lang-python": "^6.1.6",
     "@codemirror/state": "^6.4.1",
